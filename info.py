@@ -15,33 +15,33 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '').split()]
-USERNAME = environ.get('USERNAME', "https://telegram.me/Your_Raj")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001651812610'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/SB_Movie_Group')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001917260095').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "")
+API_ID = int(environ.get('API_ID', '4770590'))
+API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHoEjz1Zot614xoaJJpWkLP9__IhYiALlE')
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
+USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002147355908'))
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002038220265').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sixoc50967:d21FQ6eml55TcSK8@cluster0.ygnfysq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://tohegiw876:OQ2HQLZ9cIXEDCPZ@cluster0.oexxdrg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001963473990'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002147355908'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/d7c9c7906833797aa0244.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/82e2895b4740905b054b9.gif')
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001764238165'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002155879591'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
 ZIPLINKER = 'ziplinker.net'
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002023751348'))
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/SB_Botz_Update/98")
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002147355908'))
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "5b54b1af6eb539c7f2fcb030fb6e163bd9785789")
+SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", ZIPLINKER)
 SHORTENER_API2 = environ.get("SHORTENER_API2", "9d714f16fc0263df58858c2cc5b487598ba01b1b")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ZIPLINKER)
@@ -59,14 +59,14 @@ REF_PREMIUM = 30
 PREMIUM_POINT = 1500
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1001625752177'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002155879591'))
 
 # hastags request features
-request_channel = environ.get('REQUEST_CHANNEL', '-1001838363129')
+request_channel = environ.get('REQUEST_CHANNEL', '-1002155879591')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002023751348'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002113810572'))
 # bot settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '8080')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
