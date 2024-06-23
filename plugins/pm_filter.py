@@ -809,7 +809,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
             InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
         ],
         [
-            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/VenomMoviesbot')
+            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
         ]]    
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
