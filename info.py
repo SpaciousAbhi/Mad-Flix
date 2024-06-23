@@ -18,7 +18,7 @@ def is_enabled(value, default):
 API_ID = int(environ.get('API_ID', '4770590'))
 API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHoEjz1Zot614xoaJJpWkLP9__IhYiALlE')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1557374187').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002224824058'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
