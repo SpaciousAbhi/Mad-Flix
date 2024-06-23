@@ -20,7 +20,7 @@ API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHoEjz1Zot614xoaJJpWkLP9__IhYiALlE')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1557374187').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '1002224824058'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002224824058'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002026830023').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sixoc50967:d21FQ6eml55TcSK8@cluster0.ygnfysq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
