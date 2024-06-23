@@ -21,7 +21,7 @@ def is_enabled(value, default):
 API_ID = int(environ.get('API_ID', '4770590'))
 API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHneNmeqC5NzTfFX1C-th1HD4il_ffSd1A')
-ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1557374187').split()]
+ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1557374187 6300461900').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002224824058'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
@@ -65,7 +65,7 @@ AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_chan
 SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002155879591'))
 
 # hastags request features
-request_channel = environ.get('REQUEST_CHANNEL', '')
+request_channel = environ.get('REQUEST_CHANNEL', '-1002241752271')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002239146570'))
 # bot settings
