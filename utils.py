@@ -245,11 +245,11 @@ def get_status():
     tz = pytz.timezone('Asia/Colombo')
     hour = datetime.now(tz).time().hour
     if 5 <= hour < 12:
-        sts = "ɢᴏᴏᴅ ᴍᴏʀɴɪɴɢ"
+        sts = "𝗚𝗼𝗼𝗱 𝗠𝗼𝗿𝗻𝗶𝗻𝗴"
     elif 12 <= hour < 18:
-        sts = "ɢᴏᴏᴅ ᴀꜰᴛᴇʀɴᴏᴏɴ"
+        sts = "𝗚𝗼𝗼𝗱 𝗔𝗳𝘁𝗲𝗿𝗻𝗼𝗼𝗻"
     else:
-        sts = "ɢᴏᴏᴅ ᴇᴠᴇɴɪɴɢ"
+        sts = "𝗚𝗼𝗼𝗱 𝗘𝘃𝗲𝗻𝗶𝗻𝗴"
     return sts
 
 async def is_check_admin(bot, chat_id, user_id):
