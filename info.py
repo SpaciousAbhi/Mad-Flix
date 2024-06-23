@@ -18,30 +18,30 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '4770590 '))
+API_ID = int(environ.get('API_ID', '4770590'))
 API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHneNmeqC5NzTfFX1C-th1HD4il_ffSd1A')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7345474624:AAGB2jquwRZsdEqEWsCfvJvKgRMcAi--4PE')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002224824058'))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002113810572'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
-CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002026830023').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sixoc50967:d21FQ6eml55TcSK8@cluster0.ygnfysq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://tohegiw876:OQ2HQLZ9cIXEDCPZ@cluster0.oexxdrg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002038220265 -1002026830023').split()]
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hebag30051:E9YaOTelHTGXPRSX@cluster0.fngseu7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://nafitis242:CUs8XALgZYloDf5j@cluster0.jqqrgqe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
-LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002183996761'))
+LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002113810572'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpg')
 START_IMG = environ.get('START_IMG', 'https://graph.org/file/82e2895b4740905b054b9.gif')
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
-BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002163500587'))
+BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
 ZIPLINKER = 'ziplinker.net'
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
-LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002241752271'))
+LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
@@ -62,12 +62,12 @@ REF_PREMIUM = 30
 PREMIUM_POINT = 1500
 auth_channel = environ.get('AUTH_CHANNEL', '')
 AUTH_CHANNEL = int(auth_channel) if auth_channel and id_pattern.search(auth_channel) else None
-SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '-1002155879591'))
+SUPPORT_GROUP = int(environ.get('SUPPORT_GROUP', '))
 
 # hastags request features
-request_channel = environ.get('REQUEST_CHANNEL', '-1002241752271')
+request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
-UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002239146570'))
+UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002113810572'))
 # bot settings
 IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
