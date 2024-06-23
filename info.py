@@ -4,6 +4,9 @@ from os import environ
 from Script import script
 from collections import defaultdict
 from pyrogram import Client
+import pyrogram.utils
+
+pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
 id_pattern = re.compile(r'^.\d+$')
 def is_enabled(value, default):
