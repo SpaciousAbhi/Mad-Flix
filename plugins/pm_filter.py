@@ -799,7 +799,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚜️ 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 ⚜️', url='https://t.me/VenomStoneMoviesGroup
+            InlineKeyboardButton('⚜️ 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 ⚜️', url='https://t.me/VenomStoneMoviesGroup')
         ],
         [
             InlineKeyboardButton('🔍 𝗕𝗼𝘁𝘀', url='https://t.me/VenomStoneBots'),
