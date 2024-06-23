@@ -37,6 +37,7 @@ START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
 ZIPLINKER = 'ziplinker.net'
+PUBLICEARN = 'publicearn.com'
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
