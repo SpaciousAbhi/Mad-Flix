@@ -38,6 +38,8 @@ BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
 ZIPLINKER = 'ziplinker.net'
 PUBLICEARN = 'publicearn.com'
+ADRINOLINKS = 'adrinolinks.in'
+SHRINKFOREARN = 'shrinkforearn.in'
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
@@ -47,10 +49,10 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
-SHORTENER_API2 = environ.get("SHORTENER_API2", "9d714f16fc0263df58858c2cc5b487598ba01b1b")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ZIPLINKER)
-SHORTENER_API3 = environ.get("SHORTENER_API3", "9d714f16fc0263df58858c2cc5b487598ba01b1b")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", ZIPLINKER)
+SHORTENER_API2 = environ.get("SHORTENER_API2", "a4245c57312ff9942e8b3bbd0a8283aa2a57e38d")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ADRINOLINKS)
+SHORTENER_API3 = environ.get("SHORTENER_API3", "25dbf6fba0e192581176ceeb94525b20e25ee2bd")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", SHRINKFOREARN)
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 
