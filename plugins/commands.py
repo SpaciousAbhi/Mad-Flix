@@ -226,7 +226,7 @@ async def start(client:Client, message):
                             InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
                             ],
                             [
-                            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/VenomMoviesbot')
+                            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
                             ]]
                         reply_markup = InlineKeyboardMarkup(buttons)
                         await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -255,7 +255,7 @@ async def start(client:Client, message):
             InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
         ],
         [
-            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/VenomMoviesbot')
+            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -306,7 +306,7 @@ async def start(client:Client, message):
             InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
         ],
         [
-            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/VenomMoviesbot')
+            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
