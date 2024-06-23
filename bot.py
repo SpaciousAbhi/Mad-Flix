@@ -13,6 +13,9 @@ import pytz
 from aiohttp import web
 from plugins import web_server, check_expired_premium
 import time
+import pyrogram.utils
+
+pyrogram.utils.MIN_CHANNEL_ID = -1009147483647
 
 class Bot(Client):
     def __init__(self):
