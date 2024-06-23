@@ -37,6 +37,9 @@ START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
 ZIPLINKER = 'ziplinker.net'
+PUBLICEARN = 'publicearn.com'
+SHRINKFOREARN = 'shrinkforearn.in'
+ADRINOLINKS = 'adrinolinks.in'
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
@@ -45,11 +48,11 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://graph.org/file/1669ab9af68eaa62c3ca4.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", ZIPLINKER)
-SHORTENER_API2 = environ.get("SHORTENER_API2", "9d714f16fc0263df58858c2cc5b487598ba01b1b")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ZIPLINKER)
-SHORTENER_API3 = environ.get("SHORTENER_API3", "9d714f16fc0263df58858c2cc5b487598ba01b1b")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", ZIPLINKER)
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
+SHORTENER_API2 = environ.get("SHORTENER_API2", "25dbf6fba0e192581176ceeb94525b20e25ee2bd")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", SHRINKFOREARN)
+SHORTENER_API3 = environ.get("SHORTENER_API3", "a4245c57312ff9942e8b3bbd0a8283aa2a57e38d")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", ADRINOLINKS)
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 
@@ -69,7 +72,7 @@ request_channel = environ.get('REQUEST_CHANNEL', '')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002113810572'))
 # bot settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '8080')
 MAX_BTN = int(environ.get('MAX_BTN', '8'))
