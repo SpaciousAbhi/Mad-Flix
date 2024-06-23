@@ -44,7 +44,7 @@ async def group_search(client, message):
                 if total != 0:
                     link = await db.get_set_mgrp()
                     msg = await message.reply_text(script.SUPPORT_GRP_MOVIE_TEXT.format(message.from_user.mention() , total) ,             reply_markup=InlineKeyboardMarkup([
-                        [ InlineKeyboardButton('🔍 ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ 🔎' , url='https://t.me/SB_Movie_Group')]
+                        [ InlineKeyboardButton('🔍 ɢᴇᴛ ғɪʟᴇs ғʀᴏᴍ ʜᴇʀᴇ 🔎' , url='https://t.me/+8SEJLsVZfWViZGM1')]
                         ]))
                     await asyncio.sleep(300)
                     return await msg.delete()
@@ -799,18 +799,17 @@ async def cb_handler(client: Client, query: CallbackQuery):
         buttons = [[
             InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-            InlineKeyboardButton('ᴘʀᴇᴍɪᴜᴍ 🎉', callback_data='premium'),
+            InlineKeyboardButton('⚜️ 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 ⚜️', url='https://t.me/VenomStoneMoviesGroup
         ],
         [
-            InlineKeyboardButton('• ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ ғʀᴇᴇ •', callback_data=f'free_premium#{query.from_user.id}')
+            InlineKeyboardButton('🔍 𝗕𝗼𝘁𝘀', url='https://t.me/VenomStoneBots'),
+            InlineKeyboardButton('𝗠𝗼𝗱𝘀 🔎', url='https://t.me/VenomStoneMods')
         ],
         [
-            InlineKeyboardButton('• ʏᴏᴜʀ ᴘᴏɪɴᴛs •', callback_data=f'point#{query.from_user.id}'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data=f'about')
+            InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
         ],
         [
-            InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='earn')
+            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/VenomMoviesbot')
         ]]    
         reply_markup = InlineKeyboardMarkup(buttons)
         await query.message.edit_text(
