@@ -214,20 +214,19 @@ async def start(client:Client, message):
                 newPoint = await db.get_point(refUserId)
                 if AUTH_CHANNEL and await is_req_subscribed(client, message):
                         buttons = [[
-                            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+                            InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗧𝗵𝗲 𝗕𝗼𝘁 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽! ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
                             ],[
-                            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-                            InlineKeyboardButton('ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ 🎉', callback_data='premium'),
+                            InlineKeyboardButton('⚜️ 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 ⚜️', url='https://t.me/VenomStoneMoviesGroup')
                             ],
                             [
-                            InlineKeyboardButton('• ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ ғʀᴇᴇ •', callback_data=f'free_premium#{message.from_user.id}')
+                            InlineKeyboardButton('🔍 𝗕𝗼𝘁𝘀', url='https://t.me/VenomStoneBots'),
+            InlineKeyboardButton('𝗠𝗼𝗱𝘀 🔎', url='https://t.me/VenomStoneMods')
                             ],
                             [
-                            InlineKeyboardButton('• ʏᴏᴜʀ ᴘᴏɪɴᴛs •', callback_data=f'point#{message.from_user.id}'),
-                            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+                            InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
                             ],
                             [
-                            InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='earn')
+                            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
                             ]]
                         reply_markup = InlineKeyboardMarkup(buttons)
                         await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -244,20 +243,19 @@ async def start(client:Client, message):
             pass
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗧𝗵𝗲 𝗕𝗼𝘁 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽! ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-            InlineKeyboardButton('ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ 🎉', callback_data='premium'),
+            InlineKeyboardButton('⚜️ 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 ⚜️', url='https://t.me/VenomStoneMoviesGroup')
         ],
         [
-            InlineKeyboardButton('• ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ ғʀᴇᴇ •', callback_data=f'free_premium#{message.from_user.id}')
+            InlineKeyboardButton('🔍 𝗕𝗼𝘁𝘀', url='https://t.me/VenomStoneBots'),
+            InlineKeyboardButton('𝗠𝗼𝗱𝘀 🔎', url='https://t.me/VenomStoneMods')
         ],
         [
-            InlineKeyboardButton('• ʏᴏᴜʀ ᴘᴏɪɴᴛs •', callback_data=f'point#{message.from_user.id}'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
         ],
         [
-            InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='earn')
+            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
@@ -296,20 +294,19 @@ async def start(client:Client, message):
 
     if len(message.command) == 2 and message.command[1] in ["subscribe", "error", "okay", "help"]:
         buttons = [[
-            InlineKeyboardButton('⇆ ᴀᴅᴅ ᴍᴇ ᴛᴏ ʏᴏᴜʀ ɢʀᴏᴜᴘs ⇆', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
+            InlineKeyboardButton('➕ 𝗔𝗱𝗱 𝗧𝗵𝗲 𝗕𝗼𝘁 𝗧𝗼 𝗬𝗼𝘂𝗿 𝗚𝗿𝗼𝘂𝗽! ➕', url=f'http://t.me/{temp.U_NAME}?startgroup=start')
         ],[
-            InlineKeyboardButton('⚙ ꜰᴇᴀᴛᴜʀᴇs', callback_data='features'),
-            InlineKeyboardButton('ʙᴜʏ ᴘʀᴇᴍɪᴜᴍ 🎉', callback_data='premium'),
+            InlineKeyboardButton('⚜️ 𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 ⚜️', url='https://t.me/VenomStoneMoviesGroup')
         ],
         [
-            InlineKeyboardButton('• ɢᴇᴛ ᴘʀᴇᴍɪᴜᴍ ғʀᴇᴇ •', callback_data=f'free_premium#{message.from_user.id}')
+            InlineKeyboardButton('🔍 𝗕𝗼𝘁𝘀', url='https://t.me/VenomStoneBots'),
+            InlineKeyboardButton('𝗠𝗼𝗱𝘀 🔎', url='https://t.me/VenomStoneMods')
         ],
         [
-            InlineKeyboardButton('• ʏᴏᴜʀ ᴘᴏɪɴᴛs •', callback_data=f'point#{message.from_user.id}'),
-            InlineKeyboardButton('• ᴀʙᴏᴜᴛ •', callback_data='about')
+            InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
         ],
         [
-            InlineKeyboardButton('💸 ᴇᴀʀɴ ᴍᴏɴᴇʏ ᴡɪᴛʜ ʙᴏᴛ 💸', callback_data='earn')
+            InlineKeyboardButton('𝗔𝗱𝗺𝗶𝗻 👮', url='https://t.me/IAmVenomStone')
         ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         return await message.reply_photo(photo=START_IMG, caption=script.START_TXT.format(message.from_user.mention, get_status(), message.from_user.id),
