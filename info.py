@@ -32,7 +32,7 @@ DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002113810572'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpg')
-START_IMG = environ.get('START_IMG', 'https://graph.org/file/82e2895b4740905b054b9.gif')
+START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71163.jpg')
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
