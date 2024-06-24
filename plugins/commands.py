@@ -370,7 +370,7 @@ async def start(client:Client, message):
                 file_caption=file.caption
             )
             btn=[[
-                InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f'stream#{file.file_id}')
+                InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
             ]]
             await client.send_cached_media(
                 chat_id=message.from_user.id,
@@ -394,7 +394,7 @@ async def start(client:Client, message):
         file_caption=files.caption
     )
     btn = [[
-        InlineKeyboardButton("✛ ᴡᴀᴛᴄʜ & ᴅᴏᴡɴʟᴏᴀᴅ ✛", callback_data=f'stream#{file_id}')
+        InlineKeyboardButton('👑 𝗩𝗲𝗻𝗼𝗺 𝗦𝘁𝗼𝗻𝗲 𝗡𝗲𝘁𝘄𝗼𝗿𝗸 👑', url='https://t.me/VenomStoneNetwork')
     ]]
     d=await client.send_cached_media(
         chat_id=message.from_user.id,
