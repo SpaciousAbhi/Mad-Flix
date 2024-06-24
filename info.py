@@ -20,14 +20,14 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '4770590 '))
 API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHneNmeqC5NzTfFX1C-th1HD4il_ffSd1A')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7345474624:AAGB2jquwRZsdEqEWsCfvJvKgRMcAi--4PE')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002113810572'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002026830023').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sixoc50967:d21FQ6eml55TcSK8@cluster0.ygnfysq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://tohegiw876:OQ2HQLZ9cIXEDCPZ@cluster0.oexxdrg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://hebag30051:E9YaOTelHTGXPRSX@cluster0.fngseu7.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://nafitis242:CUs8XALgZYloDf5j@cluster0.jqqrgqe.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002113810572'))
