@@ -110,7 +110,11 @@ User - {}"""
 ❗️ ʟᴀɴɢᴜᴀɢᴇ - {languages}</b>
 """
 
-    FILE_CAPTION = """<a href='https://t.me/VenomStoneNetwork'><b>{file_name}</b></a>"""
+    FILE_CAPTION = """<a href='https://t.me/VenomStoneNetwork'><b>{file_name}</b></a>
+
+<b>Size: {file_size}</b>
+
+‼️ ɴᴏᴛᴇ: ᴛʜɪꜱ ꜰɪʟᴇ ᴡɪʟʟ ʙᴇ ᴅᴇʟᴇᴛᴇᴅ ɪɴ 10 ᴍɪɴᴜᴛᴇꜱ. ꜰᴏʀᴡᴀʀᴅ ᴀɴᴅ ᴅᴏᴡɴʟᴏᴀᴅ ɪᴛ ᴇʟꜱᴇᴡʜᴇʀᴇ. (ᴅᴜᴇ ᴛᴏ ᴄᴏᴘʏʀɪɢʜᴛ ɪꜱꜱᴜᴇꜱ)"""
 
     RESTART_TXT = """<b>
 📅 Dᴀᴛᴇ : <code>{}</code>
