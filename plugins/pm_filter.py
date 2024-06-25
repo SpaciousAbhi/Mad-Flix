@@ -27,7 +27,7 @@ async def pm_search(client, message):
             return await auto_filter(client, message)
         await auto_filter(client, message)
     else:
-        await message.reply_text("<b>𝗛𝗲𝘆 🤗, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗱𝗼𝗻'𝘁 𝘀𝗲𝗮𝗿𝗰𝗵 𝗳𝗼𝗿 𝗺𝗼𝘃𝗶𝗲𝘀 𝗮𝗻𝗱 𝘀𝗲𝗿𝗶𝗲𝘀 𝗯𝘆 𝗺𝗲𝘀𝘀𝗮𝗴𝗶𝗻𝗴 𝗺𝗲 𝗱𝗶𝗿𝗲𝗰𝘁𝗹𝘆. 𝗨𝘀𝗲 𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲 𝗴𝗿𝗼𝘂𝗽 𝘁𝗼 𝗳𝗶𝗻𝗱 𝘄𝗵𝗮𝘁 𝘆𝗼𝘂 𝗻𝗲𝗲𝗱 𝗶𝗻𝘀𝘁𝗮𝗻𝘁𝗹𝘆.\n\n𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸:\n\n✅https://t.me/VenomStoneMoviesGroup\n✅https://t.me/VenomStoneMoviesGroup\n✅https://t.me/VenomStoneMoviesGroup</b>")
+        await message.reply_text("<b>𝗛𝗲𝘆 🤗, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗨𝘀𝗲 𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲 𝗴𝗿𝗼𝘂𝗽 𝘁𝗼 𝗳𝗶𝗻𝗱 𝘄𝗵𝗮𝘁 𝘆𝗼𝘂 𝗻𝗲𝗲𝗱 𝗶𝗻𝘀𝘁𝗮𝗻𝘁𝗹𝘆.\n\n𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸:\n\n✅https://t.me/VenomStoneMoviesGroup\n✅https://t.me/VenomStoneMoviesGroup\n✅https://t.me/VenomStoneMoviesGroup</b>")
     
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def group_search(client, message):
@@ -148,14 +148,13 @@ async def next_page(bot, query):
         InlineKeyboardButton("‼️ ᴄʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}#{offset}#{req}"),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}"),
-        InlineKeyboardButton("◖ ʏᴇᴀʀ ◗", callback_data=f"years#{key}#{offset}#{req}"),
+        InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}")
     ])
     btn.insert(2, [
         InlineKeyboardButton("◖ ᴄʜᴏᴏsᴇ sᴇᴀsᴏɴ ◗", callback_data=f"seasons#{key}#{offset}#{req}")
     ])
     btn.insert(3,[
-        InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
+        
         ])
 
     if 0 < offset <= int(MAX_BTN):
@@ -285,11 +284,10 @@ async def season_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("‼️ ᴄʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}#{offset}#{req}"),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}"),
-        InlineKeyboardButton("◖ ʏᴇᴀʀ ◗", callback_data=f"years#{key}#{offset}#{req}"),
+        InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}")
     ])
     btn.insert(2,[
-        InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
+        
         ])
     
     if n_offset== '':
@@ -396,7 +394,7 @@ async def year_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("◖ ʟᴀɴɢᴜᴀɢᴇ ◗", callback_data=f"languages#{key}#{offset}#{req}"),
     ])
     btn.insert(2,[
-        InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
+        
         ])
     
     if n_offset== '':
@@ -498,11 +496,10 @@ async def quality_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("‼️ ᴄʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ ‼️", callback_data=f"languages#{key}#{offset}#{req}"),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("◖ sᴇᴀsᴏɴ ◗", callback_data=f"seasons#{key}#{offset}#{req}"),
-        InlineKeyboardButton("◖ ʏᴇᴀʀ ◗", callback_data=f"years#{key}#{offset}#{req}"),
+        InlineKeyboardButton("◖ sᴇᴀsᴏɴ ◗", callback_data=f"seasons#{key}#{offset}#{req}")
     ])
     btn.insert(2, [
-        InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
+        
     ])
     if n_offset== '':
         btn.append(
@@ -613,11 +610,11 @@ async def lang_search(client: Client, query: CallbackQuery):
         InlineKeyboardButton("‼️ ᴄʜᴏᴏsᴇ ǫᴜᴀʟɪᴛʏ ‼️", callback_data=f"qualities#{key}#{offset}#{req}"),
         ])
     btn.insert(1, [
-        InlineKeyboardButton("◖ ʏᴇᴀʀ ◗", callback_data=f"years#{key}#{offset}#{req}"),
+        
         InlineKeyboardButton("◖ sᴇᴀsᴏɴ ◗", callback_data=f"seasons#{key}#{offset}#{req}")
     ])
     btn.insert(2, [
-        InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
+        
     ])
     if n_offset== '':
         btn.append(
@@ -1281,22 +1278,20 @@ async def auto_filter(client, msg, spoll=False):
                 InlineKeyboardButton("🔰 ᴄʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ 🔰", callback_data=f"languages#{key}#{offset}#{req}"),
                 ])
             btn.insert(1, [
-                InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}"),
-                InlineKeyboardButton("◖ ʏᴇᴀʀ ◗", callback_data=f"years#{key}#{offset}#{req}"),
+                InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}")
             ])
             btn.insert(2, [
                 InlineKeyboardButton("◖ ᴄʜᴏᴏsᴇ sᴇᴀsᴏɴ ◗", callback_data=f"seasons#{key}#{offset}#{req}")
             ])
             btn.insert(3,[
-                InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
+                
                 ])
         else:
             btn.insert(0,[
         InlineKeyboardButton("🔰 ᴄʜᴏᴏsᴇ ʟᴀɴɢᴜᴀɢᴇ 🔰", callback_data=f"languages#{key}#{offset}#{req}"),
         ])
             btn.insert(1, [
-                InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}"),
-                InlineKeyboardButton("◖ ʏᴇᴀʀ ◗", callback_data=f"years#{key}#{offset}#{req}"),
+                InlineKeyboardButton("◖ ǫᴜᴀʟɪᴛʏ ◗", callback_data=f"qualities#{key}#{offset}#{req}")
             ])
             btn.insert(2, [
                 InlineKeyboardButton("◖ ᴄʜᴏᴏsᴇ sᴇᴀsᴏɴ ◗", callback_data=f"seasons#{key}#{offset}#{req}")
@@ -1305,12 +1300,11 @@ async def auto_filter(client, msg, spoll=False):
         #fix this later
         if total_results >= 3:
             btn.insert(0,[
-                InlineKeyboardButton("♨️ sᴇɴᴅ ᴀʟʟ ♨️", callback_data=batch_link),
-                InlineKeyboardButton("🎗️ ᴘʀᴇᴍɪᴜᴍ 🎗️", callback_data="premium")
+                
             ])
         else:
             btn.insert(0,[
-                InlineKeyboardButton("💰 ᴘʀᴇᴍɪᴜᴍ 💰", callback_data="premium")
+                
             ])
                              
     if spoll:
