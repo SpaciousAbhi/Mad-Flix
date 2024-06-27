@@ -20,14 +20,14 @@ def is_enabled(value, default):
 #main variables
 API_ID = int(environ.get('API_ID', '4770590 '))
 API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7339126123:AAHneNmeqC5NzTfFX1C-th1HD4il_ffSd1A')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7279701036:AAH7zI4DOfM3iCmnD172IodwpCP03dBE1To')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002113810572'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002038220265 -1002026830023').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://sixoc50967:d21FQ6eml55TcSK8@cluster0.ygnfysq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://tohegiw876:OQ2HQLZ9cIXEDCPZ@cluster0.oexxdrg.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://biyerax927:5RRqhXAbDR2P8luy@cluster0.lv1shat.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://miwiy36931:RYPIy355MF7jOHyC@cluster0.lx6krxw.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002113810572'))
@@ -40,6 +40,7 @@ ZIPLINKER = 'ziplinker.net'
 PUBLICEARN = 'publicearn.com'
 SHRINKFOREARN = 'shrinkforearn.in'
 ADRINOLINKS = 'adrinolinks.in'
+ZIPSHORT = 'zipshort.net'
 STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
@@ -47,12 +48,12 @@ IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/7a0860885a8c5942c8192.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
+SHORTENER_API = environ.get("SHORTENER_API", "ed2f26acce12a13b76b43b12a1ad90be7b3e30c3")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", ZIPSHORT)
 SHORTENER_API2 = environ.get("SHORTENER_API2", "a4245c57312ff9942e8b3bbd0a8283aa2a57e38d")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ADRINOLINKS)
-SHORTENER_API3 = environ.get("SHORTENER_API3", "a4245c57312ff9942e8b3bbd0a8283aa2a57e38d")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", ADRINOLINKS)
+SHORTENER_API3 = environ.get("SHORTENER_API3", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", PUBLICEARN)
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 
