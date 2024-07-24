@@ -18,7 +18,7 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '4770590 '))
+API_ID = int(environ.get('API_ID', '4770590'))
 API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
 BOT_TOKEN = environ.get('BOT_TOKEN', '7072168719:AAFtSZT02BErD7WCVi73r3a4whlfUTdEs1Q')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
@@ -50,10 +50,10 @@ TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/7a0860885a8c5942c8192.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
-SHORTENER_API2 = environ.get("SHORTENER_API2", "")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", )
-SHORTENER_API3 = environ.get("SHORTENER_API3", "")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", )
+SHORTENER_API2 = environ.get("SHORTENER_API2", "a4245c57312ff9942e8b3bbd0a8283aa2a57e38d")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ADRINOLINKS)
+SHORTENER_API3 = environ.get("SHORTENER_API3", "ed2f26acce12a13b76b43b12a1ad90be7b3e30c3")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", ZIPSHORT)
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 
