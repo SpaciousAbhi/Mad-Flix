@@ -46,7 +46,7 @@ STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQe
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
-TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2503")
+TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2533")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/7a0860885a8c5942c8192.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
 SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
