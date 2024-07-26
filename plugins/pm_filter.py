@@ -1237,7 +1237,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer(url=link)
         return
 
-async def auto_filter(client, msg, spoll=False):
+async def auto_filter(client, msg, spoll=True):
     st = await msg.reply_sticker(sticker=random.choice(STICKERS_IDS))
     if not spoll:
         message = msg
