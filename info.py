@@ -41,7 +41,7 @@ PUBLICEARN = 'publicearn.com'
 SHRINKFOREARN = 'shrinkforearn.in'
 ADRINOLINKS = 'adrinolinks.in'
 ZIPSHORT = 'zipshort.net'
-STICKERS_IDS = ('CAACAgUAAxkBAAEKVaxlCWGs1Ri6ti45xliLiUeweCnu4AACBAADwSQxMYnlHW4Ls8gQMAQ').split()
+STICKERS_IDS = ('CAACAgUAAxkBAAJpXWak6cvw2TesOzOL2SFafmD710aSAAJnDgACB4gpVQjvw1KMFKopNQQ').split()
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
