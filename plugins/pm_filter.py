@@ -27,7 +27,7 @@ async def pm_search(client, message):
             return await auto_filter(client, message)
         await auto_filter(client, message)
     else:
-        await message.reply_text("<b>𝗛𝗲𝘆 🤗, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗨𝘀𝗲 𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲 𝗴𝗿𝗼𝘂𝗽 𝘁𝗼 𝗳𝗶𝗻𝗱 𝘄𝗵𝗮𝘁 𝘆𝗼𝘂 𝗻𝗲𝗲𝗱 𝗶𝗻𝘀𝘁𝗮𝗻𝘁𝗹𝘆.\n\n𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸:\n\n✅https://t.me/VenomStoneMoviesGroup\n✅https://t.me/VenomStoneMoviesGroup\n✅https://t.me/VenomStoneMoviesGroup</b>")
+        await message.reply_text("<b>𝗛𝗲𝘆 🤗, 𝗣𝗹𝗲𝗮𝘀𝗲 𝗨𝘀𝗲 𝗼𝘂𝗿 𝗺𝗼𝘃𝗶𝗲 𝗴𝗿𝗼𝘂𝗽 𝘁𝗼 𝗳𝗶𝗻𝗱 𝘄𝗵𝗮𝘁 𝘆𝗼𝘂 𝗻𝗲𝗲𝗱 𝗶𝗻𝘀𝘁𝗮𝗻𝘁𝗹𝘆.\n\n𝗠𝗼𝘃𝗶𝗲 𝗚𝗿𝗼𝘂𝗽 𝗟𝗶𝗻𝗸:\n\n✅https://t.me/+9maT5SyL9q85YzI1\n✅https://t.me/+9maT5SyL9q85YzI1\n✅https://t.me/+9maT5SyL9q85YzI1</b>")
     
 @Client.on_message(filters.group & filters.text & filters.incoming)
 async def group_search(client, message):
