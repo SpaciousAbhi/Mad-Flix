@@ -29,7 +29,7 @@ CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHAN
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://yimifi7078:yphsnUI3Bi2J2ULU@cluster0.onmoejv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://jakej65792:ovj0DkLvPk4CPYvB@cluster0.k3ojhmp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002113810572'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpg')
 START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71163.jpg')
