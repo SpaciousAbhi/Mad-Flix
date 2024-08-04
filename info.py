@@ -18,18 +18,18 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', '4770590'))
-API_HASH = environ.get('API_HASH', 'e33bf9032335b874acb9c6406f044836')
-BOT_TOKEN = environ.get('BOT_TOKEN', '7072168719:AAFtSZT02BErD7WCVi73r3a4whlfUTdEs1Q')
+API_ID = int(environ.get('API_ID', '22663326'))
+API_HASH = environ.get('API_HASH', '927e822ca6e854d8b7369c72ab9506e4')
+BOT_TOKEN = environ.get('BOT_TOKEN', '7308383842:AAEUHLCoMen00oFU5fEJ8vn10_pFz88_s7U')
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1654334233').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002113810572'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002038220265 -1002026830023').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://biyerax927:5RRqhXAbDR2P8luy@cluster0.lv1shat.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
-DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://sipox67538:21r6EUhj5x5pJgzV@cluster0.vwua2s9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jakej65792:ovj0DkLvPk4CPYvB@cluster0.k3ojhmp.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://yimifi7078:yphsnUI3Bi2J2ULU@cluster0.onmoejv.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'Files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1002113810572'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/55749b0d3eaee3a5b958b.jpg')
 START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71163.jpg')
