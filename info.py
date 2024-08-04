@@ -73,10 +73,10 @@ request_channel = environ.get('REQUEST_CHANNEL', '-1002241752271')
 REQUEST_CHANNEL = int(request_channel) if request_channel and id_pattern.search(request_channel) else None
 UPI_PAY_LOGS = int(environ.get('UPI_PAY_LOGS', '-1002113810572'))
 # bot settings
-IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', True)
+IS_PM_SEARCH = is_enabled('IS_PM_SEARCH', False)
 AUTO_FILTER = is_enabled('AUTO_FILTER', True)
 PORT = os.environ.get('PORT', '8080')
-MAX_BTN = int(environ.get('MAX_BTN', '8'))
+MAX_BTN = int(environ.get('MAX_BTN', '10'))
 AUTO_DELETE = is_enabled('AUTO_DELETE', True)
 DELETE_TIME = int(environ.get('DELETE_TIME', 300))
 IMDB = is_enabled('IMDB', False)
