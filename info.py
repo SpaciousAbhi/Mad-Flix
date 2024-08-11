@@ -36,7 +36,7 @@ START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
-EARN4LINK = 'earn4link.in'
+EARNFORLINK = 'earn4link.in'
 STICKERS_IDS = ('CAACAgUAAxkBAAJpY2alJkmLwjC0KFjQh310HOV4SQNRAAL1DwACOZkoVevVYW-YUYNKNQQ').split()
 
 # verify system vars
@@ -45,7 +45,7 @@ LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2533")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/7a0860885a8c5942c8192.jpg")
 SHORTENER_API = environ.get("SHORTENER_API", "7ebeacbdb05bb5e25802b31fa256f421defb5633")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", EARN4LINK)
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", EARNFORLINK)
 SHORTENER_API2 = environ.get("SHORTENER_API2", "")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", )
 SHORTENER_API3 = environ.get("SHORTENER_API3", "")
