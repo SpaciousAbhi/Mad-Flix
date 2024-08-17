@@ -36,7 +36,11 @@ START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
-EARNFORLINK = 'earn4link.in'
+ZIPLINKER = 'ziplinker.net'
+PUBLICEARN = 'publicearn.com'
+SHRINKFOREARN = 'shrinkforearn.in'
+ADRINOLINKS = 'adrinolinks.in'
+ZIPSHORT = 'zipshort.net'
 STICKERS_IDS = ('CAACAgUAAxkBAAJpY2alJkmLwjC0KFjQh310HOV4SQNRAAL1DwACOZkoVevVYW-YUYNKNQQ').split()
 
 # verify system vars
@@ -44,12 +48,12 @@ IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2533")
 VERIFY_IMG = environ.get("VERIFY_IMG", "https://telegra.ph/file/7a0860885a8c5942c8192.jpg")
-SHORTENER_API = environ.get("SHORTENER_API", "7ebeacbdb05bb5e25802b31fa256f421defb5633")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", EARNFORLINK)
-SHORTENER_API2 = environ.get("SHORTENER_API2", "")
-SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", )
-SHORTENER_API3 = environ.get("SHORTENER_API3", "")
-SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", )
+SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
+SHORTENER_API2 = environ.get("SHORTENER_API2", "a4245c57312ff9942e8b3bbd0a8283aa2a57e38d")
+SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", ADRINOLINKS)
+SHORTENER_API3 = environ.get("SHORTENER_API3", "ed2f26acce12a13b76b43b12a1ad90be7b3e30c3")
+SHORTENER_WEBSITE3 = environ.get("SHORTENER_WEBSITE3", ZIPSHORT)
 TWO_VERIFY_GAP = int(environ.get('TWO_VERIFY_GAP', "14400"))
 THREE_VERIFY_GAP = int(environ.get('THREE_VERIFY_GAP', "14400"))
 
