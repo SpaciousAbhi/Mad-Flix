@@ -36,7 +36,6 @@ START_IMG = environ.get('START_IMG', 'https://telegra.ph/file/eb119179b4d2a13e71
 #this vars is for when heroku or koyeb acc get banned, then change this vars as your file to link bot name
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1002113810572'))
 URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
-PUBLICEARN = 'publicearn.com'
 EARNFORLINK = 'earn4link.in'
 ADRINOLINKS = 'adrinolinks.in'
 STICKERS_IDS = ('CAACAgUAAxkBAAJpY2alJkmLwjC0KFjQh310HOV4SQNRAAL1DwACOZkoVevVYW-YUYNKNQQ').split()
