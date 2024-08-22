@@ -26,7 +26,7 @@ USERNAME = environ.get('USERNAME', "https://telegram.me/IAmVenomStone")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1002113810572'))
 MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/VenomStoneNetwork')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1002038220265 -1002026830023').split()]
-DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://biyerax927:5RRqhXAbDR2P8luy@cluster0.lv1shat.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
+DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://jecape6578:jXHugLLWpb7p0ARw@cluster0.uhcjq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_URI2 = environ.get('DATABASE_URI2', "mongodb+srv://sipox67538:21r6EUhj5x5pJgzV@cluster0.vwua2s9.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 DATABASE_NAME = environ.get('DATABASE_NAME', "cluster0")
 COLLECTION_NAME = environ.get('COLLECTION_NAME', 'cluster0')
