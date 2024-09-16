@@ -39,6 +39,7 @@ URL = environ.get('URL', 'file-to-linkbot-d0729a6fc938.herokuapp.com')
 EARNFORLINK = 'earn4link.in'
 MODIJIURL = 'modijiurl.com'
 PUBLICEARN = 'publicearn.com'
+GETTWOSHORT = 'get2short.com'
 STICKERS_IDS = ('CAACAgUAAxkBAAJpY2alJkmLwjC0KFjQh310HOV4SQNRAAL1DwACOZkoVevVYW-YUYNKNQQ').split()
 
 # verify system vars
@@ -46,8 +47,8 @@ IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1002113810572'))
 TUTORIAL = environ.get("TUTORIAL", "https://t.me/VenomStoneMovies/2533")
 VERIFY_IMG = environ.get("VERIFY_IMG", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
-SHORTENER_API = environ.get("SHORTENER_API", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
-SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", PUBLICEARN)
+SHORTENER_API = environ.get("SHORTENER_API", "9ae188a4e5609c6f089d21d01816974230a64218")
+SHORTENER_WEBSITE = environ.get("SHORTENER_WEBSITE", GETTWOSHORT)
 SHORTENER_API2 = environ.get("SHORTENER_API2", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
 SHORTENER_WEBSITE2 = environ.get("SHORTENER_WEBSITE2", PUBLICEARN)
 SHORTENER_API3 = environ.get("SHORTENER_API3", "c464f482d973a7e88ba6cb7077a3afa5de229dd5")
