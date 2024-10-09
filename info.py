@@ -40,7 +40,7 @@ EARNFORLINK = 'earn4link.in'
 MODIJIURL = 'modijiurl.com'
 PUBLICEARN = 'publicearn.com'
 GETTWOSHORT = 'get2short.com'
-STICKERS_IDS = ('CAACAgUAAxkBAAJpY2alJkmLwjC0KFjQh310HOV4SQNRAAL1DwACOZkoVevVYW-YUYNKNQQ').split()
+STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
 
 # verify system vars
 IS_VERIFY = is_enabled('IS_VERIFY', True)
